@@ -1,0 +1,185 @@
+                LIST<E>CLASS
+
+1.To add data to the growable list, use operator[]=, add or addAll.
+solve-
+      void main() {
+  List<String> l = [];
+  print(l.runtimeType);
+  print(l);
+  l.add("Sunday");
+  print(l);
+  l.addAll(["monday", "tuesday", "wednesday", "thrusday", "shivam", "a,b,c"]);
+  print(l);
+  print(l.length);
+}
+
+
+
+
+
+2.To check whether, and where, the element is in the list, use indexOf or lastIndexOf.
+solve-
+      void main() {
+  final growableList = ['A', 'B', 'C', 'B'];
+  final indexA = growableList.indexOf('A');
+  final firstIndexB = growableList.indexOf('B');
+  final lastIndexC = growableList.lastIndexOf('C');
+  print('indexA: $indexA, firstIndexB: $firstIndexB, lastIndexC: $lastIndexC');
+}
+
+
+
+
+
+
+3.To remove an element from the growable list, use remove, removeAt, removeLast, removeRange or removeWhere.
+solve-
+      void main() {
+  final growableList = ['A', 'B', 'C', 'D'];
+
+  growableList.remove('C');
+  growableList.removeLast();
+  print(growableList);
+}
+
+
+
+
+
+
+4.To insert an element at position in the list, use insert or insertAll.
+solve-
+      void main() {
+  final growableList = ['A', 'B', 'C', 'D'];
+
+ 
+  print(growableList);
+  growableList.insert(1, 'New');
+  print(growableList);
+}
+
+
+
+
+
+
+5.To replace a range of elements in the list, use fillRange, replaceRange or setRange.
+solve-
+      void main() {
+  final growableList = ['A', 'B', 'C', 'B'];
+  
+  growableList.replaceRange(0, 2, ['AB', 'A']);
+  print(growableList);
+  growableList.fillRange(2, 4, 'F');
+  print(growableList); 
+  const string = 'Dart is fun';
+final result = string.replaceRange(1, 11, '1 2 3 4 5');
+print(result);
+}
+
+
+
+
+
+
+6.To sort the elements of the list, use sort.
+solve-
+      void main() {
+  List<int> growableList = [3, 1, 4, 1, 5, 9, 2, 6];
+  growableList.sort((a, b) => a.compareTo(b));
+  print(growableList);
+}
+
+
+
+
+
+7.To shuffle the elements of this list randomly, use shuffle.
+solve-
+      void main() {
+  List<int> growableList = [1, 1, 2, 3, 4, 5, 6, 9];
+  growableList.shuffle();
+print(growableList);
+}
+
+
+
+
+
+
+8.First write number than find even number after that find odd number?
+solve-
+      void main() {
+  int n = 30;
+  for (int i = 0; i <= n; i++) print(i);
+  List<String> l = [];
+  for (int i = 0; i <= n; i++) {
+    if (i % 2 == 0 ) {
+      l.add(i.toString());
+    }
+  }
+  print(l.runtimeType);
+  print(l);
+   List<String> l2 = [];
+  for (int i = 0; i <= n; i++) {
+    if (i % 3 == 0 ) {
+      l2.add(i.toString());
+    }
+  }
+  print(l2.runtimeType);
+  print(l2);
+} 
+
+    ONE MORE TRICK
+
+
+
+ void main() {
+  int n = 10;
+
+  List<int> allnumbers = [];
+  List<int> evennumbers = [], oddnumbers = [];
+  for (int i = 0; i <= n; i++) {
+    allnumbers.add(i);
+  }
+  print(allnumbers.runtimeType);
+  print(allnumbers);
+  n = allnumbers.length;
+  for (int i = 0; i <= n - 1; i++) {
+    int value = allnumbers.elementAt(i);
+    //     print(value);
+    if (value % 2 == 0)
+      evennumbers.add(value);
+    else
+      oddnumbers.add(value);
+  }
+   print(evennumbers);
+  print(oddnumbers);
+}
+
+
+
+
+
+
+
+
+9.Map (Key-Value Pairs).
+solve-
+      void main() {
+  Map<int, String> subject = {90: 'Math', 80: 'Science'};
+  Map<String, int> marks = {'Math': 90, 'Science': 80};
+  print(subject[90]);
+  print(subject[80]);
+  print("Marks=${marks['Math']}");
+  print("Marks=${marks['Science']}");
+}
+output=Math
+Science
+Marks=90
+Marks=80
+
+
+
+ 
+

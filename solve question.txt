@@ -1,0 +1,269 @@
+9. Print the table of a given number.
+solve-
+      void main() {
+  int i, n = 30;
+  for ( i = 0; i <= n; i += 1) {
+    if (i % 3 == 0) {
+      print(i);
+    }
+  
+
+
+
+10.Change a given number to words 123 = One Two Three
+solve-
+      void main() {
+  int name = 1;
+  String one = "one";
+  String two = "two";
+  String three = "three";
+  switch (name) {
+    case 1:
+      print(one);
+    case 2:
+      print(two);
+    case 3:
+      print(three);
+    default:
+      print("Invalid name");
+  }
+}
+
+
+
+
+1. Print numbers from 1 to 50
+solve-
+      void main() {
+ for (int i = 1; i <= 50; i++) {
+    print(i);
+  }
+}
+
+
+
+
+
+2. Print all odd numbers between 1 to 100
+solve-
+      void main() {
+  for (int i = 2; i <= 100; i++) {
+    if (i % 3 == 0) {
+      print(i);
+    }
+  }
+}
+
+
+
+
+
+
+
+3. Print squares of numbers from 1 to 10
+solve-
+      void main() {
+  for (int i = 0; i <= 10; i++) {
+    print(i * i);
+    
+  }
+}
+
+
+
+
+
+4.
+  Solve-
+        void main() {
+  int n = 123;
+  String reverse = '';
+  String data = "";
+  print(n);
+  while (n > 0) {
+    int rem = n % 10;
+    switch (rem) {
+      case 0:
+        reverse = 'Zero';
+        break;
+      case 1:
+        reverse = 'One';
+        break;
+      case 2:
+        reverse = 'Two';
+        break;
+      case 3:
+        reverse = 'Three';
+        break;
+      case 4:
+        reverse = 'Four';
+        break;
+      case 5:
+        reverse = 'Five';
+        break;
+      case 6:
+        reverse = 'Six';
+        break;
+      case 7:
+        reverse = 'Seven';
+        break;
+      case 8:
+        reverse = 'Eight';
+        break;
+      case 9:
+        reverse = 'Nine';
+        break;
+    }
+    n = (n / 10).toInt();
+    data =  data + " " + reverse;
+  }
+  print(data);
+}
+
+
+
+
+
+
+
+5. Calculate factorial of a number (e.g., 5! = 120).
+solve-
+      void main() {
+      print('5! = 120');
+      int result = 1;
+      int n = 5; // Define the value for n
+      for (int i = 1; i <= n; i++) {
+      result *= i;
+  }
+      print('Factorial of $n');
+      print(result);
+}
+
+
+
+
+
+
+
+7. Count digits in a given number (e.g., 51293 → 5 digits).
+solve-
+      
+
+
+void main() {
+  int count = 0;
+
+  int num = 51293;
+  print(num);
+  while (num > 0) {
+    count++;
+    num = (num / 10).toInt();
+    print(num);
+  }
+  print('count = $count');
+}
+
+
+
+
+
+
+
+8.For break the number.
+solve-
+      void main() {
+  int num = 50;
+
+  for (int i = 0; i <= num; i++) {
+    if (i == 15) break;
+    print(i);
+  }
+}
+
+
+
+
+
+9.Use of while.
+-- void main() {
+  int num = 10;
+  int i = 1;
+  while (i <= 10) {
+    print(i);
+    i++;
+  }
+}
+
+
+
+
+
+
+
+10.Use of do while.
+-- void main() {
+  int num = 10;
+  int i = 1;
+  do {
+    print(i);
+    i++;
+  } while (i <= 10);
+}
+
+
+
+
+
+
+11.put the value (a + b)
+solve-
+      void main() {
+  int a=1,b=2;
+  int sum = a + b;
+  // value of 'a + b' //
+  print(sum);
+} 
+
+one more trick
+void main() {
+  int a=1,b=2;
+  
+  print('a=$a, b= $b  and a+b = ${a+b}');
+}
+
+
+
+
+
+12. Write number?
+solve-
+      void main() {
+  int i;
+  int n = 40;
+  for (int i = 0; i <= n; i++) print(i);
+}
+
+
+
+
+3. Based on temperature input, print:
+"Cold" if < 15
+
+"Warm" if 15–30
+
+"Hot" if > 30
+solve-
+      void main() {
+  String weather = " ";
+  int temperature = 3;
+  int cold = 15;
+  int warm = 15;
+  int hot = 30;
+  if (temperature < warm)
+    weather = "cold";
+  else if (temperature < hot)
+    weather = "warm";
+  else
+    weather = "hot";
+  print(weather);
+}

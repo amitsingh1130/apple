@@ -1,0 +1,102 @@
+1.Set (Unordered and Unique).
+solve-
+      void main() {
+     Set<int> numbers = {1, 2, 3, 3};
+     print(numbers);
+   }     // Output: {1, 2, 3}
+
+
+
+
+
+
+2.List (Ordered Collection)
+solve-
+  void main() {
+  List<String> names = ['Aman', 'Riya', 'Rohan'];
+  names.add('Nita');
+  print(names);
+}         // Output: [Aman, Riya, Rohan, Nita]
+
+
+
+
+
+
+
+3.Queue (First In, First Out)
+solve-
+   import 'dart:collection';
+   void main() {
+  Queue<String> queue = Queue();
+  queue.add('Task1');
+  queue.add('Task2');
+  print(queue.removeFirst()); // Task1
+}
+
+
+
+
+
+
+4.PriorityQueue (From collection package)
+solve-
+ import 'package:collection/collection.dart';
+  void main() {
+  var queue = PriorityQueue<int>((a, b) => b.compareTo(a));
+  queue.addAll([5, 1, 10]);
+  print(queue.removeFirst()); // 10
+}
+
+
+
+
+
+
+5.Create a List to store daily temperatures and find the average.
+solve-
+      void main() {
+  List<String> weather = ['cold', 'warm', 'hot'];
+  int temp = 30;
+  String currentWeather;
+
+  if (temp <= 12) {
+    currentWeather = 'cold';
+  } else if (temp <= 25) {
+    currentWeather = 'warm';
+  } else {
+    currentWeather = 'hot';
+  }
+
+  switch (currentWeather) {
+    case 'cold':
+      print('good');
+      break;
+    case 'warm':
+      print('excelent');
+      break;
+    case 'hot':
+      print('average');
+      break;
+  }
+}
+output = average.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
